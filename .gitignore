@@ -1,52 +1,58 @@
-# Prerequisites
-*.d
+# Sistema operativo
+/tmp
+/.DS_Store
+.localized/
+*~
 
-# Object files
+# Editores de texto
+.idea/
+*.swp
+*.DS_Store
+.vscode/
+# Ignora los archivos de configuración de VS Code, excepto settings.json
+.vscode/settings.json
+
+# Compiladores y herramientas
+build/
+dist/
+.tox/
+.eggs/
+*.egg-info/
+env/
+venv/
+include/
+lib/
+local/
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+CMakeFiles/
+CMakeCache.txt
+Makefile
 *.o
-*.ko
 *.obj
-*.elf
+*.[a-zA-Z0-9]+
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Herramientas de control de versiones
+.git/
+.hg/
+.svn/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Bases de datos
+*.sqlite3
+*.db
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Archivos temporales y logs
+*.log
+npm-debug.log*
+yarn-error.log*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Archivos de configuración específicos del sistema
+.env*
+config.py
+settings.py
+CMakeLists.txt
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Archivos de caché
+*.cache
